@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9236a6784c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>Welcome to my Library</header>
+
+  <div class="container">
+  </div>
+  <dialog class="favDialog">
+    <form class="dialog-form">
+      <p>
+        <label>
+          Title:
+          <input type="text" class="title-input" minlength="7" required>
+        </label>
+      </p>
+      
+      <p>
+        <label>
+          Author:
+          <input type="text" class="author-input" minlength="7" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          Pages:
+          <input type="number" class="pages-input" required min="1">
+        </label>
+      </p>
+      <p>
+        <label>
+          Status:
+          <select class="status-input" required >
+            <option value="" selected disabled>Choose the status</option>
+            <option>Read</option>
+            <option>Not Read</option>
+            <option>In Progress</option>
+          </select>
+        </label>
+      </p>
+      
+      <p>
+        <label for="image"> Image:
+          <input type="file" accept="image/*" id="image" class="image-input">
+        </label>
+      </p>
+      
+      <div>
+        <button class="cancel-button">Cancel</button>
+        <button class="create-button">Create</button>
+      </div>
+
+      
+    </form>
+  </dialog>
+
+  <button class="add-button">+</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
